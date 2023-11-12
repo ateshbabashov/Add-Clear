@@ -1,0 +1,110 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(239, 217, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 50%;
+    height: 600px;
+    background-color: rgb(0, 0, 0, 40%);
+    border-radius: 15px;
+    padding: 5px 0 20px 0;
+}
+.container h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+.container form{
+    width: 100%;
+    /* height: 300px; */
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container form #inputText{
+    width: 65%;
+    height: 30px;
+    color: blue;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: 0.3s ease-in-out all;
+    padding-left: 0 10px 0 10px;
+    text-transform: capitalize;
+}
+.container form #inputText:focus{
+    box-shadow: 0 0 15px yellow;
+}
+.container form #addToDo,
+.container form #clearToDo{
+    width: 13%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: aliceblue;
+    font-style: italic;
+    transition: 0.3s ease-in-out all;
+    user-select: none;
+}
+.container form #addToDo{
+    background-color: green;
+}
+.container form #addToDo:hover{
+    background-color: rgb(91, 208, 91);
+    transform: scale(1.02);
+}
+.container form #clearToDo{
+    background-color: crimson;
+}
+.container form #clearToDo:hover{
+    background-color: rgb(177, 71, 92);
+    transform: scale(1.02);
+}
+.container .To-dos{
+    width: 95%;
+    height: 400px;
+    background-color: aquamarine;
+    margin: 10px auto auto auto;
+    border-radius: 10px;
+}
+@media only screen and (max-width:700px){
+    .container{
+        width: 95%;
+    }
+    .container form #inputText{
+        width: 45%;
+    }
+    .container form #addToDo,
+    .container form #clearToDo{
+        width:23%;
+        font-size: 12px;
+    }
+}
+.paraghraph-style{
+    width: 100%;
+    background-color: white;
+    margin: 10px auto 10px auto;
+    color: rgb(24, 22, 26);
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
